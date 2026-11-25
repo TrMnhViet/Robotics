@@ -1,0 +1,45 @@
+
+import math
+
+# Robot parameters
+ROBOT_RADIUS = 0.3
+MAX_SPEED = 1.5
+MIN_SPEED = -0.3
+MAX_ACCEL = 1.0
+MAX_YAW_RATE = math.radians(40)
+MAX_DELTA_YAW_RATE = math.radians(40)
+
+# DWA parameters
+V_RESOLUTION = 0.05
+YAW_RATE_RESOLUTION = math.radians(1)
+DT = 0.1
+PREDICT_TIME = 2.0
+
+TO_GOAL_COST_GAIN = 0.15
+SPEED_COST_GAIN = 1.5
+OBSTACLE_COST_GAIN = 1.0
+
+# LiDAR parameters
+LIDAR_NUM_RAYS = 360
+LIDAR_MAX_RANGE = 8.0
+LIDAR_FOV = 2 * math.pi
+LIDAR_UPDATE_RATE = 10
+
+# Environment parameters
+WORLD_WIDTH = 20.0
+WORLD_HEIGHT = 20.0
+
+# Simulation parameters
+START_X = 1.0
+START_Y = 1.0
+START_YAW = 0.0
+
+GOAL_X = 18.0
+GOAL_Y = 18.0
+GOAL_TOLERANCE = 0.4
+
+MAX_SIMULATION_STEPS = 3000
+# A* for minimum path
+# A* parameters
+ASTAR_GRID_RESOLUTION = 0.2
+ASTAR_SAFETY_MARGIN = 0.25
